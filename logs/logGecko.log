@@ -1,0 +1,19 @@
+1657725722123	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\fchambi\\AppData\\Local\\Temp\\rust_mozprofile.UwS74mhUFtZy"
+1657725723017	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1657725723018	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1657725723019	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1657725723019	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource:///modules/sessionstore/SessionStore.jsm, line 1325: uncaught exception: 2147746065
+1657725727122	Marionette	INFO	Listening on port 57671
+1657725727495	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://inmueblescalidad.ruat.gob.bo/InmueblesWeb/Administracion/Autentificacion/LoginUsuario.jsp, line 1: ReferenceError: actualizar_captcha is not defined
+1657725732350	Marionette	INFO	Stopped listening on port 57671
+[Child 25840, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1566824965/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 28904, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1566824965/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 27116, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1566824965/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
