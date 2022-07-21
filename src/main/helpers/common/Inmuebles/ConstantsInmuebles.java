@@ -10,10 +10,10 @@ import java.io.File;
 public class ConstantsInmuebles 
 {
 	public static final String  DIRECTORIO_PROYECTO_INMUEBLES                            = System.getProperty("user.dir").replace('\\', '/') + "/";     
-	public static final String  ARCHIVO_DATOS_PAGINA                                     = "Inmuebles/DataPageGenerator.xls";
-	public static final String  ARCHIVO_DATOS_PRUEBA                                     = "Inmuebles/DatosPrueba.xls";
-	
-	public static final String  TIPO_PROPIEDAD_UNICA                                     = "PROPIEDAD ÚNICA";
+	public static final String  ARCHIVO_DATOS_PAGINA                                     = "generators/inmuebles/DataPageGenerator.xls";
+	public static final String  ARCHIVO_DATOS_PRUEBA                                     = "testCases/inmuebles/DatosPrueba.xls";
+	public static final String  HOJA_DATOS_EMPADRONAMIENTO                               = "Empadronamiento (GENERADOR)";
+	/*public static final String  TIPO_PROPIEDAD_UNICA                                     = "PROPIEDAD ÚNICA";
 	public static final String  TIPO_PROPIEDAD_ACCIONES_DERECHOS                         = "PROPIEDAD ACCIONES DERECHOS";
 	public static final String  AREA_URBANO                                              = "URBANO";
 	public static final String  AREA_RURAL                                               = "RURAL";
@@ -89,7 +89,7 @@ public class ConstantsInmuebles
 	public static final String  NOMBRE_FORM_DEFINICION_INMUEBLE                          = "frmInmueble";
 	public static final String  NOMBRE_FORM_VISTA_DATOS_CODIGO_CATASTRAL                 = "frmCodificacion";
 	public static final String  NOMBRE_FORM_VISTA_DATOS_TERRENO                          = "frmTerreno";
-	public static final String  NOMBRE_FORM_VISTA_DATOS_CONSTRUCCIONES                   = "frmConstrucciones";
+	public static final String  NOMBRE_FORM_VISTA_DATOS_CONSTRUCCIONES                   = "frmConstrucciones";*/
 	
 	
 }

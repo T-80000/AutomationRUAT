@@ -1,7 +1,7 @@
 package test.testCases;
 
 import main.helpers.common.CommonComponent;
-import main.tasks.Login;
+import main.tasks.login.LoginInmuebles;
 import test.baseTest.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,14 +17,15 @@ public class LoginTest extends BaseTest {
 		// parametros de entrada o variables
 		
 		//Act
-		
-		 Login.as(webDriver, usuario,pasword);
-		
+		//LoginInmuebles.as(webDriver, usuario,pasword);
+		//Assert.assertTrue(false);
+		//Assert.assertTrue(MenuPrincipal.isVisible(webDriver));
+
 		//Assert
-		
-		// Assert.true(condicion,esperado);
-		Assert.assertTrue(true);
-		CommonComponent.RecordInLog(" prueba del registro del assert: ...OK");
+
+		//MenuPrincipal.enterProforma(webDriver);
+		//CommonComponent//.RecordInLog("se encuentra en la pagina principal");
+
 		
 
 	}
@@ -39,7 +40,7 @@ public class LoginTest extends BaseTest {
 
 		//Act
 
-		Login.as(webDriver, usuario,pasword);
+		//LoginInmuebles.as(webDriver, usuario,pasword);
 
 		//Assert
 

@@ -1,5 +1,4 @@
 package main.helpers.common;
-
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.BufferedWriter;
@@ -24,13 +23,17 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+/**
+ * @description Utilitarios comunes
+ * @author Faustina Chambi Camata
+ * @date 14/07/2022
+ */
 public class CommonComponent 
 {
 
 	public static String getNroAleatorio (int nroDigitos)
 	{
 		StringBuilder numAleatorio = new StringBuilder();
-		
 		for(int i = 0; i < nroDigitos; i ++)
 			numAleatorio.append(String.valueOf((int) (Math.random() * 10)));
 		
@@ -298,7 +301,6 @@ public class CommonComponent
 		{
 			throw new AssertionError("Formato de fecha incorrecto, favor verificar.");
 		}
-		
 		return fecha;
 	}
 	
@@ -327,7 +329,7 @@ public class CommonComponent
 		{
 			switch ( palabra.charAt ( caracter_i ) )
 			{
-				/*case 'Á': palabraSinAcentos.append ( 'A' ); break;
+				case 'Á': palabraSinAcentos.append ( 'A' ); break;
 				case 'É': palabraSinAcentos.append ( 'E' ); break;
 				case 'Í': palabraSinAcentos.append ( 'I' ); break;
 				case 'Ó': palabraSinAcentos.append ( 'O' ); break;
@@ -337,7 +339,7 @@ public class CommonComponent
 				case 'í': palabraSinAcentos.append ( 'i' ); break;
 				case 'ó': palabraSinAcentos.append ( 'o' ); break;
 				case 'ú': palabraSinAcentos.append ( 'u' ); break;
-				default : palabraSinAcentos.append ( palabra.charAt ( caracter_i ) );*/
+				default : palabraSinAcentos.append ( palabra.charAt ( caracter_i ) );
 			}		
 		}
 		
