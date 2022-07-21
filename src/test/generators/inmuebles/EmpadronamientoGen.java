@@ -5,7 +5,11 @@ import main.tasks.Empadronamiento;
 import org.testng.annotations.Test;
 import test.baseTest.BaseTest;
 
-
+/**
+ * @description Se definen constantes comunes generales.
+ * @date 21/07/2022
+ * @author Faustina Chambi
+ */
 public class EmpadronamientoGen extends BaseTest {
 
     @Test

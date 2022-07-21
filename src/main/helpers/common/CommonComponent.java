@@ -24,7 +24,7 @@ import org.apache.pdfbox.text.PDFTextStripper;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
- * @description Utilitarios comunes
+ * @description Contiene Metodos comunes de Inmuebles
  * @author Faustina Chambi Camata
  * @date 14/07/2022
  */

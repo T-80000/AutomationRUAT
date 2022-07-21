@@ -3,7 +3,7 @@ package main.helpers.common;
 import java.io.File;
 
 /**
- * @description Se definen constantes comunes generales.
+ * @description Se definen constantes comunes generales de Inmuebles.
  * @date 24/02/2022
  * @author Faustina Chambi
  */

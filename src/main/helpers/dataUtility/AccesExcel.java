@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
+/**
+ * @description Se definen constantes comunes generales.
+ * @date 24/02/2022
+ * @author Faustina Chambi
+ */
 public class AccesExcel {
 	private ReaderExcel lectorExcel;
 	private Hashtable<String, ArrayList<String>> atributos;

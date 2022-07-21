@@ -3,7 +3,11 @@ package main.tasks;
 import main.actions.LogWrite;
 import main.helpers.common.Inmuebles.ConstantsInmuebles;
 import main.helpers.dataUtility.AccesExcel;
-
+/**
+ * @description Permite empadronar inmueble.
+ * @date 21/07/2022
+ * @author Faustina Chambi
+ */
 public class Empadronamiento extends ApplicationExcel {
     private int       numeroAcciones;
     private int       numeroInmuebles;

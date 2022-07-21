@@ -7,7 +7,11 @@ import java.util.Hashtable;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
-
+/**
+ * @description Se definen constantes comunes generales.
+ * @date 24/02/2022
+ * @author Faustina Chambi
+ */
 public class ReaderExcel {
 	/**
 	 * Archivo Excel a leer.

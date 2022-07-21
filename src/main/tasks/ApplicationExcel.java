@@ -17,9 +17,9 @@ import java.util.ArrayList;
 import java.util.Set;
 
 /**
- * @description Clase para iniciar el aplicativo
+ * @description Clase para iniciar el aplicativo con el Excel
  * @author Faustina Chambi Camata
- * @date 14/07/2022
+ * @date 21/07/2022
  * */
 public class ApplicationExcel {
     protected String               url; //url de acceso

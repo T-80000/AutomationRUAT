@@ -21,7 +21,11 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.ITestResult;
 import org.openqa.selenium.WebDriver;
 
-
+/**
+ * @description clase Base para las generadores y Casos de pruebas.
+ * @date 21/07/2022
+ * @author Faustina Chambi
+ */
 public class BaseTest{
     protected FirefoxProfile       perfil;
     protected FirefoxOptions       opcionesNavegador;
