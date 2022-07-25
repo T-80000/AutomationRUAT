@@ -11,8 +11,8 @@ public class Enter {
 	public Enter() {
 	}
 	
-    public static void text(WebDriver webDriver, By localizador, String texto){
-        WebDriverWait wait = new WebDriverWait(webDriver, 60);
+    public static void text(WebDriver webDriver, By localizador, String texto,int timeSecond){
+        WebDriverWait wait = new WebDriverWait(webDriver, timeSecond);
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(localizador));
         element.clear();
         element.sendKeys(texto);

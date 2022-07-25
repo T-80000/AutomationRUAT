@@ -7,13 +7,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class IsDisplayed {
-    public static boolean element(WebDriver webDriver, By locator){
+    public static boolean element(WebDriver webDriver, By locator, int timeSecond){
        try{
-        WebDriverWait wait = new WebDriverWait(webDriver, 5);
+        WebDriverWait wait = new WebDriverWait(webDriver,timeSecond);
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-        webDriver.findElement(locator).isDisplayed();
-        return true;
-       }catch (Exception e){
+        return webDriver.findElement(locator).isDisplayed();
+        }catch (Exception e){
          //  e.printStackTrace();
            return false;
        }
