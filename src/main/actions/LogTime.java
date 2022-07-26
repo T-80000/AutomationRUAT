@@ -1,6 +1,10 @@
 package main.actions;
 
 import main.helpers.common.CommonComponent;
+import main.helpers.common.Constants;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class LogTime {
     static long InicitalExecTime;
@@ -11,8 +15,6 @@ public class LogTime {
      }
 
     public static void end(){
-        CommonComponent cc= new CommonComponent();
-        cc.StartCommonLog();
-        cc.RecordInLog("TIEMPO EJECUCION TOTAL: ".concat(CommonComponent.formatearTiempoEjecucion(System.currentTimeMillis() - InicitalExecTime)));
+        Log.recordInLog("Tiempo Total de Ejecución: ".concat(CommonComponent.formatearTiempoEjecucion(System.currentTimeMillis() - InicitalExecTime)));
     }
 }

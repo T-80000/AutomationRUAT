@@ -1,5 +1,6 @@
 package test.testCases;
 
+import main.actions.Log;
 import main.helpers.common.CommonComponent;
 import main.tasks.login.LoginInmuebles;
 import test.baseTest.BaseTest;
@@ -46,7 +47,7 @@ public class LoginTest extends BaseTest {
 
 		// Assert.true(condicion,esperado);
 		Assert.assertTrue(false);
-		CommonComponent.RecordInLog(" prueba del registro del assert: ...OK");
+		Log.recordInLog(" prueba del registro del assert: ...OK");
 
 
 	}

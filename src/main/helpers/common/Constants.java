@@ -27,15 +27,14 @@ public class Constants
 	public static final String  PARAMETRO_MUNICIPIO                                      = "MUNICIPIO";
 	//public static final String  HOJA_DATOS_CONTRIBUYENTES                                = "Contribuyentes";
 	public static final String  CONTRASENIA_DEFECTO                                      = "F12345678$";
-	public static final String  CADENA_FIN_EJECUCION_TOTAL                               = "===============================================================================================================";
+	public static final String  CADENA_FIN_EJECUCION_TOTAL                               = "=========================================================================";
+	//public static final String  CADENA_FIN_ITERACION                                     = "---------------------------------------------------------------------------------------------------------------";
+	public static final String  SUBSISTEMA_LIQUIDACION                                   = "LIQUIDACION";
 
-	public static final String  CADENA_FIN_ITERACION                                     = "---------------------------------------------------------------------------------------------------------------";
-	
-	/*
 	public static final String  SUBSISTEMA_REGISTRO_TECNICO                              = "REGISTRO TECNICO";
 	public static final String  SUBSISTEMA_REGISTRO_TRIBURARIO                           = "REGISTRO TRIBUTARIO";
 	public static final String  SUBSISTEMA_REGISTRO_ADMINISTRATIVO                       = "REGISTRO ADMINISTRATIVO";
-	public static final String  SUBSISTEMA_LIQUIDACION                                   = "LIQUIDACION";
+
 	public static final String  SUBSISTEMA_TRAMITES                                      = "TRAMITES";
 	public static final String  SUBSISTEMA_REPORTES_CONSULTAS                            = "REPORTES Y CONSULTAS";
 	
@@ -59,16 +58,18 @@ public class Constants
 	public static final String  PATH_VISTA_DATOS_COD_CATASTRAL                           = "/html/body/div[2]/form/table/tbody/tr[1]/td/div[1]/h2";
 	public static final String  PATH_ERROR_404                                           = "/html/body/font/table[1]/tbody/tr/td/font/h2";
 	public static final String  CADENA_ERROR_APLICATIVO                                  = "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||";				//ATINM-97 (AP-057/2018)
-	public static final String  CADENA_CONEXION_MITUDS                                   = "jdbc:oracle:thin:@mituds.ruat.gob.bo:1535:RDIS";    
+	public static final String  PATH_FORMULARIO                                          = "/form";
+	/*
+	public static final String  CADENA_CONEXION_MITUDS                                   = "jdbc:oracle:thin:@mituds.ruat.gob.bo:1535:RDIS";
 	public static final String  CADENA_CONEXION_IMPUDS                                   = "jdbc:oracle:thin:@impuds.ruat.gob.bo:1533:RDIS";
 	public static final String  CADENA_CONEXION_CONUDS                                   = "jdbc:oracle:thin:@conuds.ruat.gob.bo:1537:INTEGUDS";
 	public static final String  USUARIO_BASE_DATOS                                       = "HERRAMIENTASCALIDAD";
-	public static final String  CONTRASENIA_BASE_DATOS                                   = "h123";
+	public static final String  CONTRASENIA_BASE_DATOS                                   = "h123";*/
 	
 	public static final String  TIPO_LOCALIZADOR_ID                                      = "id";
 	public static final String  TIPO_LOCALIZADOR_NAME                                    = "name";
 	public static final String  TIPO_LOCALIZADOR_XPATH                                   = "xpath";
-	public static final String  TIPO_LOCALIZADOR_LINK_TEXT                               = "linkText";*/
+	public static final String  TIPO_LOCALIZADOR_LINK_TEXT                               = "linkText";
 	public static final String  TIPO_LOCALIZADOR_CSS_SELECTOR                            = "cssSelector";
 	public static final String  SELECTOR_CSS_CODIGO_ERROR                                = "span.error";
 	

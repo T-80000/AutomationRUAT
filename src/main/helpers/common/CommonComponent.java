@@ -183,7 +183,7 @@ public class CommonComponent
 		tiempoEjecucion    /=  1000;
 		String segundos     = (tiempoEjecucion % 60) > 0? String.valueOf(tiempoEjecucion % 60): String.valueOf(tiempoEjecucion);		
 		tiempoEjecucion    /= 60;
-		String minutos      = (tiempoEjecucion % 60 > 0)? String.valueOf(tiempoEjecucion): "";		
+		String minutos      = (tiempoEjecucion % 60 > 0)? String.valueOf(tiempoEjecucion): "";
 		
 		return minutos + (minutos.isEmpty()? "": " min. ") + segundos + " seg. " + milisegundos + " mseg.";
 	}
@@ -425,33 +425,6 @@ public class CommonComponent
 		return listaNumeros;
 	}
 
-	public static void RecordInLog(String msgLog)
-	{
-		File           log      = new File(Constants.DIRECTORIO_PROYECTOS.concat("logs/").concat(Constants.ARCHIVO_LOG));
-		BufferedWriter escritor = null;
-
-		try
-		{
-			escritor = new BufferedWriter(new FileWriter(log, true));
-			msgLog   = getFechaHoraActual().concat(": ").concat(msgLog);
-			if(msgLog.contains("\n"))
-			{
-				escritor.newLine();
-				escritor.write(msgLog.replaceAll("\n", ""));
-			}
-			else
-				escritor.write(msgLog);
-
-			escritor.newLine();
-			escritor.close();
-			System.out.println(msgLog);
-		}
-		catch (IOException archivoNoEncontradoExcepcion)
-		{
-			//throw new AssertionFailedError("ERROR: I/O - Archivo no encontrado o no es posible leer/escribir en él.");
-		}
-	}
-
 	public static String getFechaHoraActual()
 	{
 		return new SimpleDateFormat(Constants.MASCARA_FECHA_HORA).format(Calendar.getInstance().getTime());
@@ -481,5 +454,10 @@ public class CommonComponent
 	public void StartCommonLog()
 	{
 		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, Constants.DIRECTORIO_LOGS.concat(Constants.ARCHIVO_LOG_GECKODRIVER));
+	}
+
+	public String obtAmbiente(String url){
+		String a = ""+url.substring(5,8);
+		return  a;
 	}
 }

@@ -1,7 +1,8 @@
 package test.baseTest;
 
 import com.aventstack.extentreports.Status;
-import main.actions.LogWrite;
+import main.actions.Log;
+import main.actions.LogTime;
 import main.helpers.common.Constants;
 import main.helpers.dataUtility.ReportManager;
 import main.helpers.dataUtility.ScreenShotHelper;
@@ -140,13 +141,15 @@ public class BaseTest{
      */
     protected void startDriver()
     {
-        LogWrite.with("Iniciando Aplicativo...");
-        LogWrite.with("             ".concat(this.getClass().getSimpleName().toUpperCase()));
+       // Log.recordInLog("Iniciando Aplicativo...");
+        //Log.recordInLog("             ".concat(this.getClass().getSimpleName().toUpperCase()));
         //this.fechaHoraInicio   = new SimpleDateFormat(Constantes.MASCARA_FECHA_HORA).format(Calendar.getInstance().getTime());
         //this.tiempoInicioTotal = System.currentTimeMillis();
         //this.tiempoInicioTest  = System.currentTimeMillis();
+        //Log.onEnvironment();
+        LogTime.start();
         System.setProperty(GeckoDriverService.GECKO_DRIVER_EXE_PROPERTY, Constants.GECKO_DRIVER);
-        LogWrite.with("Aplicativo iniciado. ");
+        //Log.recordInLog("Aplicativo iniciado. ");
         //LogWrite.with("Ambiente: ".concat(getAmbient()));
     }
 
