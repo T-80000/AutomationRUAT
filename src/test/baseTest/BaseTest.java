@@ -141,16 +141,8 @@ public class BaseTest{
      */
     protected void startDriver()
     {
-       // Log.recordInLog("Iniciando Aplicativo...");
-        //Log.recordInLog("             ".concat(this.getClass().getSimpleName().toUpperCase()));
-        //this.fechaHoraInicio   = new SimpleDateFormat(Constantes.MASCARA_FECHA_HORA).format(Calendar.getInstance().getTime());
-        //this.tiempoInicioTotal = System.currentTimeMillis();
-        //this.tiempoInicioTest  = System.currentTimeMillis();
-        //Log.onEnvironment();
         LogTime.start();
         System.setProperty(GeckoDriverService.GECKO_DRIVER_EXE_PROPERTY, Constants.GECKO_DRIVER);
-        //Log.recordInLog("Aplicativo iniciado. ");
-        //LogWrite.with("Ambiente: ".concat(getAmbient()));
     }
 
 }
